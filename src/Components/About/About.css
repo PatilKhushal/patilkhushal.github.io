@@ -1,0 +1,35 @@
+.animation{
+    animation: userImgAnimation .3s linear forwards;
+}
+
+.card
+{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    &:nth-child(even),&:nth-child(odd)
+    {
+        transition: translate 2s, transform .5s, scale 2s;
+        transform: rotateY(180deg);
+        scale: 0;
+        translate: 100% 100%;
+    }
+    &:nth-child(1)
+    {
+        scale: 1;
+        transform: rotateY(360deg);
+        translate : 0% 0%;
+    }
+}
+
+@keyframes userImgAnimation {
+    from
+    {
+        transform: rotate(-180deg) scale(0);
+    }
+    to
+    {
+        transform: rotate(180deg) scale(1);
+    }
+}
