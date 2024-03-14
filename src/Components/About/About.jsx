@@ -39,11 +39,11 @@ function About() {
       <div className="h-full flex shadow-[0px_2px_200px_10px_#000_inset] overflow-hidden tablet:flex-col-reverse tablet:h-max">
         <div className="w-1/2 justify-end items-center flex flex-col gap-6 mid-desktop:gap-4 tablet:w-full tablet:gap-2 text-xl large-mobile:text-base p-8 text-justify tablet:py-0 tablet:px-2 z-10 text-[#B5BEC6]">
           <div className="text-center text-9xl drop-shadow-[-7px_0px_1px_#000] tablet:text-8xl">Hello!</div>
-          <div className="drop-shadow-[-7px_0px_1px_#000]">
+          <div className="drop-shadow-[-2px_0px_1px_#000]">
             I'm <strong><em className="text-green-400 underline" >{selfData.firstName}</em></strong> <HighlightText>, a self-taught web developer </HighlightText>{" "} passionate with a knack for building<HighlightText> dynamic and responsive web applications.</HighlightText>
           </div>
-          <div className="drop-shadow-[-7px_0px_1px_#000]"> My journey in the tech world is marked by a continuous quest for learning and an unwavering commitment to excellence.</div>
-          <div className="drop-shadow-[-7px_0px_1px_#000]"> I specialize in <HighlightText> Full Stack Development, </HighlightText> with a keen interest in <HighlightText> both backend logic and frontend aesthetics.</HighlightText>I've embarked on a journey to transform ideas into digital realities.</div>
+          <div className="drop-shadow-[-2px_0px_1px_#000]"> My journey in the tech world is marked by a continuous quest for learning and an unwavering commitment to excellence.</div>
+          <div className="drop-shadow-[-2px_0px_1px_#000]"> I specialize in <HighlightText> Full Stack Development, </HighlightText> with a keen interest in <HighlightText> both backend logic and frontend aesthetics.</HighlightText>I've embarked on a journey to transform ideas into digital realities.</div>
         </div>
         <div className="w-1/2 flex justify-center overflow-hidden tablet:w-full">
           <img
