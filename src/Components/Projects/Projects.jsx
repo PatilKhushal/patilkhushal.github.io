@@ -25,7 +25,7 @@ function Projects() {
                 {value.isVideo ? (
                   <video
                     src={value.src}
-                    className="absolute w-full top-0 h-full tablet:h-max "
+                    className="absolute w-full top-0 h-full tablet:h-max large-mobile:top-[10%] "
                     muted
                     loop
                     autoPlay={true}
@@ -33,7 +33,7 @@ function Projects() {
                 ) : (
                   <img
                     src={value.src}
-                    className="absolute w-full top-0 h-full tablet:h-max"
+                    className="absolute w-full top-0 h-full tablet:h-max large-mobile:top-[10%]"
                   />
                 )}
               </div>
@@ -50,7 +50,7 @@ function Projects() {
                       Demo Link
                     </button>
                   </Link>
-                  <Link to={value.link}>
+                  <Link to={value.repo}>
                     <button className="px-4 py-2 w-max rounded-md bg-[#FF8811] shadow-[0px_0px_12px_10px_#000_inset]">
                       Repo Link
                     </button>
