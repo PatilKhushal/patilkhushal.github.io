@@ -8,9 +8,9 @@ function Projects() {
     const slider = document.querySelector(".slider");
 
     function activate(e) {
-      const items = document.querySelectorAll(".item");
-      e.target.matches(".prev") && slider.append(items[0]);
-      e.target.matches(".next") && slider.prepend(items[items.length - 1]);
+      let items = document.querySelectorAll(".item");
+      e.target.matches(".prev") && slider.prepend(items[items.length - 1]);
+      e.target.matches(".next") && slider.append(items[0]);
     }
 
     document.addEventListener("click", activate, false);
@@ -21,6 +21,7 @@ function Projects() {
         <div className="slider">
           {projectData.map((value) => (
             <div key={Math.random()} className="item">
+              <h1 className="text-green-500">{value.number}</h1>
               <div className="relative h-full">
                 {value.isVideo ? (
                   <video
@@ -61,7 +62,7 @@ function Projects() {
           ))}
         </div>
         <div className="absolute bottom-2 left-1/2 -translate-x-1/2 z-10 flex ">
-          <div className="border-4 border-black text-center p-4 rounded-[50%] flex justify-center items-center bg-white bg-opacity-50 backdrop-blur-sm aspect-square text-sm prev" name="arrow-forward-outline">prev</div>
+        <div className="border-4 border-black text-center p-4 rounded-[50%] flex justify-center items-center bg-white bg-opacity-50 backdrop-blur-sm aspect-square text-sm prev" name="arrow-forward-outline">prev</div>
           <div className="border-4 border-black text-center p-4 rounded-[50%] flex justify-center items-center bg-white bg-opacity-50 backdrop-blur-sm aspect-square text-sm next" name="arrow-back-outline">next</div>
         </div>
       </div>
