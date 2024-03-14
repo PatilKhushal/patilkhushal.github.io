@@ -91,11 +91,11 @@ function About() {
       </div>
 
       {/* Certification */}
-      <div className="h-full mt-4 flex flex-col large-mobile:h-1/2 shadow-[0px_2px_200px_10px_#000_inset] p-4">
+      <div className="h-full mt-4 flex flex-col overflow-hidden large-mobile:h-1/2 shadow-[0px_2px_200px_10px_#000_inset] p-4 large-mobile:p-0">
       <div className="flex text-white w-full justify-center overflow-hidden py-4">
           <h1 className="w-full text-7xl small-tablet:text-6xl large-mobile:text-5xl  text-center drop-shadow-[5px_5px_2px_#000] ">Certifications</h1>
         </div>
-        <div className="relative mt-8 h-full w-full">
+        <div className="relative mt-8 h-full w-full large-mobile:mt-4">
           <div className="slider w-full h-full">
             {
               courseData.map((value) => <div key={Math.random()} className="card ">
@@ -108,8 +108,8 @@ function About() {
               </div>
             </div>)
             }
-            <div className="absolute bottom-2 left-1/2 -translate-x-1/2 z-10 ">
-            <button className="border text-center px-8  flex justify-center items-center prev bg-white bg-opacity-50 backdrop-blur-sm  text-3xl" name="arrow-back-outline">
+            <div className="absolute border border-black rounded-xl overflow-hidden bottom-2 large-mobile:bottom-4 left-1/2 -translate-x-1/2 z-10 ">
+            <button className="text-center px-8  flex justify-center items-center prev bg-white bg-opacity-50 backdrop-blur-sm  text-3xl" name="arrow-back-outline">
               &gt;&gt;
             </button>
           </div>

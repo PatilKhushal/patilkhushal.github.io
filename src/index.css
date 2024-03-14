@@ -83,4 +83,9 @@
             transform: translate(0%, 0%) scale(1);
         }
     }
+
+    ::-webkit-scrollbar
+    {
+        @apply w-0;
+    }
 }
