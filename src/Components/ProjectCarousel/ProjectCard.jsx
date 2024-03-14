@@ -38,14 +38,14 @@ function ProjectCard({
           
         </div>
         <div className={`flip-card-back h-max w-full z-10`}>
-          <div className="flex flex-col p-8 gap-8 transition-all justify-center items-center">
-          <div className="flex gap-4 p-10 w-full justify-center">
+          <div className="flex flex-col p-8 gap-8 transition-all justify-center items-center large-mobile:p-2 large-mobile:gap-2 large-mobile:justify-between">
+          <div className="flex gap-4 p-10 w-full justify-center large-mobile:p-6">
             {skills.map((data) => (
               <img key={Math.random()} src={data} className="w-full drop-shadow-[0px_0px_30px_#000]" />
             ))}
           </div>
           <Link to={link} className="">
-            <button className="py-2 px-6 border">Visit</button>
+            <button className="py-2 px-6 border shadow-[0px_0px_10px_5px_#000]">Visit</button>
           </Link>
           </div>
         </div>
