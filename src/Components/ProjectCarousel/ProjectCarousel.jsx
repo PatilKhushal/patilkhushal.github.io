@@ -21,7 +21,7 @@ function ProjectCarousel() {
         transitionTime={'500'}
       >
       {
-        projectData.slice(1).map((value, index) => (<div className={style}>
+        projectData.slice(1).map((value, index) => (<div key={Math.random()} className={style}>
             <ProjectCard
               skills={value.skills}
               link={value.link}
@@ -32,7 +32,7 @@ function ProjectCarousel() {
           </div>))
       }
 
-<div className={style}>
+<div className={style} key={Math.random()}>
             <ProjectCard
               skills={projectData[0].skills}
               link={projectData[0].link}

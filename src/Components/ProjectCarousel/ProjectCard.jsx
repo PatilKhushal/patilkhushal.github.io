@@ -33,7 +33,7 @@ function ProjectCard({
                 style={{ width: "88.2%" }}
               ></img>
             )}
-            <h1 className={`absolute text-2xl z-10 w-full h-full drop-shadow-[0.5px_0px_0.3px_#000] bg-[url(../ProjectTextBg.jpg)] bg-center bg-cover bg-no-repeat top-0 text-[#4A1942] text-transparent bg-clip-text large-mobile:text-base small-mobile:text-sm`}>{title}</h1>
+            <h1 className={`absolute text-3xl z-10 w-full h-full drop-shadow-[0.5px_0px_0.3px_#000] bg-[url(../ProjectTextBg.jpg)] bg-center bg-cover bg-no-repeat top-0 text-transparent bg-clip-text large-mobile:text-lg small-mobile:text-sm`}>{title}</h1>
           </div>
           
         </div>
