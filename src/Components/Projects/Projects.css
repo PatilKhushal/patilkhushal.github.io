@@ -1,7 +1,7 @@
 .item {
   @apply w-full h-full list-none absolute top-1/2 -translate-y-1/2 bg-black bg-center bg-cover rounded-3xl tablet:top-0 tablet:translate-y-0;
 
-  transition: transform 0.1s, left 0.75s, top 0.75s, rotate 1s, width 0.75s, height 0.75s;
+  transition: transform 0.5s, left 0.5s, top 0.5s, rotate 0.5s, width 0.5s, height 0.5s;
 
   &:nth-child(1n) {
     left: 100%;
