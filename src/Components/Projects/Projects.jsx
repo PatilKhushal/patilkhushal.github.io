@@ -21,7 +21,6 @@ function Projects() {
         <div className="slider">
           {projectData.map((value) => (
             <div key={Math.random()} className="item">
-              <h1 className="text-green-500">{value.number}</h1>
               <div className="relative h-full">
                 {value.isVideo ? (
                   <video

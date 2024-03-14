@@ -18,7 +18,10 @@ import react from "../assets/svg/react-2.svg";
 import tailwind from "../assets/svg/tailwind-css-2.svg";
 
 let i = 1;
-const projectData = [
+const projectData = [ 
+  /* 
+      * first element must be your oldest project then after (from second element) add projects in descending order
+  */
   {
     number : i++,
     isVideo : true,

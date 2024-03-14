@@ -5,14 +5,6 @@
     @apply absolute top-[16%] left-[6%] h-1/2 w-[88.2%];
 }
 
-.card {
-    @apply flex flex-col tablet:items-center tablet:justify-around;
-}
-
-.child-grp {
-    @apply m-auto grid w-[80%] grid-cols-3 gap-12 p-4 tablet:grid-cols-1 tablet:w-full tablet:gap-4
-}
-
 @tailwind utilities;
 
 @layer html {
@@ -21,159 +13,74 @@
         box-sizing: border-box
     }
 
-    .background{
-        background: #360033;  /* fallback for old browsers */
-background: -webkit-linear-gradient(to right, #0b8793, #360033);  /* Chrome 10-25, Safari 5.1-6 */
-background: linear-gradient(to right, #0b8793, #360033); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    .background {
+        background: #360033;
+        /* fallback for old browsers */
+        background: -webkit-linear-gradient(to right, #0b8793, #360033);
+        /* Chrome 10-25, Safari 5.1-6 */
+        background: linear-gradient(to right, #0b8793, #360033);
+        /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
         z-index: -2;
     }
 
-    .fade {
-        animation: fade 200ms linear forwards
-    }
-
-    .fadeEnd {
-        animation: fadeEnd 200ms linear forwards
-    }
-
-    .scale
-    {
+    .scale {
         animation: scaleMe 2000ms linear forwards;
     }
-    
-    .scaleInverse
-    {
-        animation: scaleMeInverse 2000ms linear forwards;
+
+    .cardEffect:hover h1 {
+        transition: transform 1000ms;
+        transform: translateY(0) !important;
     }
 
-    .cardEffect:hover h1
-    {
-        transition: transform 1000ms;
-        transform: translateY(0) !important; 
-    }
-    
     .flip-card {
         background-color: transparent;
         perspective: 1000px;
         width: 100%;
         height: 100%;
-      }
-      
-      .flip-card-inner {
+    }
+
+    .flip-card-inner {
         position: relative;
         width: 100%;
         height: 100%;
         text-align: center;
         transition: transform 0.6s;
         transform-style: preserve-3d;
-        box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
-      }
-      
-      .flip-card:hover .flip-card-inner {
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    }
+
+    .flip-card:hover .flip-card-inner {
         transform: rotateY(180deg);
-      }
-      
-      .flip-card-front, .flip-card-back {
+    }
+
+    .flip-card-front,
+    .flip-card-back {
         position: absolute;
         width: 100%;
         height: 100%;
         -webkit-backface-visibility: hidden;
         backface-visibility: hidden;
-      }
-      
-      .flip-card-back {
+    }
+
+    .flip-card-back {
         transform: rotateY(180deg);
-      }
-      
-    .rotateMe
-    {
-        animation: rotate 2000ms linear forwards;
     }
 
-    @keyframes fade {
+    @keyframes scaleMe {
         0% {
-            transform: translate(-150%)
-        }
-
-        to {
-            transform: translate(0)
-        }
-    }
-
-    @keyframes fadeEnd {
-        to {
-            transform: translate(150%)
-        }
-    }
-
-    @keyframes scaleMe 
-    {
-        0%
-        {
             transform: translate(-100%, 0%) scale(0);
-        }    
-        
-        50%
-        {
+        }
+
+        50% {
             transform: translate(-50%, -30%) scale(0.5);
         }
-        
-        75%
-        {
+
+        75% {
             transform: translate(-30%, 0%) scale(0.5);
         }
 
-        100%
-        {
-            transform:  translate(0%, 0%) scale(1);
-        }    
-    }
-    
-    @keyframes scaleMeInverse
-    {
-        /* 0%
-        {
-            transform: translate(100%, 0%) scale(0);
-        }    
-        
-        50%
-        {
-            transform: translate(0%, 0%) scale(0.5);
-        }
-        
-        75%
-        {
-            transform: translate(50%, 0%) scale(0.75);
-        }
-
-        100%
-        {
+        100% {
             transform: translate(0%, 0%) scale(1);
-        }    */ 
-
-        from
-        {
-            transform: scale(0);
-        }
-        50%
-        {
-            transform: scale(0);
-        }
-        to
-        {
-            transform: scale(1);
-        }
-    }
-
-    @keyframes rotate {
-        from
-        {
-            transform: rotate(0deg);
-        }
-        
-        from
-        {
-            transform: rotate(360deg);
         }
     }
 }
