@@ -5,9 +5,7 @@ import {
 } from "react-vertical-timeline-component";
 import "react-vertical-timeline-component/style.min.css";
 import courseData from "../../Data/courseData";
-import { Carousel } from "react-responsive-carousel";
 import "react-responsive-carousel/lib/styles/carousel.min.css";
-import experienceData from "../../Data/experienceData";
 import educationData from "../../Data/educationData";
 import selfData from "../../Data/selfData.js";
 import "./About.css";
@@ -120,28 +118,6 @@ function About() {
         
       </div>
 
-      {/* Experience */}
-      {/* <div>
-        <div className="text-white text-center">
-          <h1>Experience</h1>
-        </div>
-        <VerticalTimeline
-          layout="1-column-right"
-          className="flex justify-center"
-          lineColor="transparent"
-        >
-          {experienceData.map((value) => (
-            <VerticalTimelineElement
-              key={Math.random()}
-              className="w-1/2"
-              date={value.date}
-              dateClassName="w-full text-center"
-            >
-              <img src={value.src} alt="" />
-            </VerticalTimelineElement>
-          ))}
-        </VerticalTimeline>
-      </div> */}
     </div>
   );
 }

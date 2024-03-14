@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import hamburger from "../../assets/images/hamburger.png";
-import { Link, NavLink } from "react-router-dom";
+import { Link } from "react-router-dom";
 import NavigationLinks from "../NavigationLinks/NavigationLinks";
 import github from "../../assets/svg/github.svg";
 import instagram from "../../assets/svg/instagram.svg";

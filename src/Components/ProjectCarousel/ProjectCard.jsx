@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import imac from "../../assets/images/imac.png";
 import { Link } from "react-router-dom";
 

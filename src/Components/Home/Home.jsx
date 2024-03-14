@@ -3,8 +3,6 @@ import SkillMarquee from "../SkillMarquee/SkillMarquee";
 import ProjectCarousel from "../ProjectCarousel/ProjectCarousel";
 import selfData from "../../Data/selfData.js"; // import user data
 
-/* text-[#FA8334]
-text-[#FFB17A] */
 function Home() {
   return (
     <div className={`text-white overflow-auto`}>
