@@ -51,7 +51,7 @@ function Header() {
             isHidden ? "large-mobile:hidden" : ""
           }`}
         >
-          <button>Resume &darr;</button>
+          <a href="/resume/Patil Khushal Resume.pdf" download><button>Resume &darr;</button></a>
           <Logo
             link="https://github.com/PatilKhushal"
             imgSrc={github}
